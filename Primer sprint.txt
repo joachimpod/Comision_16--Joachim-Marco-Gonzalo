@@ -1,3 +1,10 @@
+Diseño del juego:
+
+El juego se va a llamar "Ragnarok", va a tener un estilo de dibujos vikingos. El heore principal va a ser un vikingo y su
+ataque va a ser mediante arco y flechas. Los enemigos van a ser esqueletos y monstruos varios. El ataque va a ser de manera
+horizontal, ubicando al personaje en el margen izquierdo y los enemigos provienen de la derecha hacia la izquierda. El margen
+superior va a tener 5 corazones con la vida del heroe, un puntaje y el nivel actual en el que estamos.
+
 Generacion del mapa:
 A cada enemigo (planeados previamente) se le setea la posicion inicial respecto al nivel. Mismo para los obstaculos.
 El Heroe comienza en la mitad de la pantalla, en el margen izquierdo.
