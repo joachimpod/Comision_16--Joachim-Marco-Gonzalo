@@ -1,0 +1,35 @@
+Diseño del juego:
+
+El juego se va a llamar "Ragnarok", va a tener un estilo de dibujos vikingos. El heore principal va a ser un vikingo y su
+ataque va a ser mediante arco y flechas. Los enemigos van a ser esqueletos y monstruos varios. El ataque va a ser de manera
+horizontal, ubicando al personaje en el margen izquierdo y los enemigos provienen de la derecha hacia la izquierda. El margen
+superior va a tener 5 corazones con la vida del heroe, un puntaje y el nivel actual en el que estamos.
+
+Generacion del mapa:
+A cada enemigo (planeados previamente) se le setea la posicion inicial respecto al nivel. Mismo para los obstaculos.
+El Heroe comienza en la mitad de la pantalla, en el margen izquierdo.
+Comienza  a ejecutarse la inteligencia de los enemigos.
+
+Diseñar en pseudocódigo (general) la generación del mapa:
+Se muestra una imagen inicial indicando el nivel que se va a jugar. Ej: NIVEL 1
+Desaparece la imagen.
+Se setea el background actual de cada nivel. // grafico
+Cada nivel tiene una lista de enemigos predeterminada, asi como tambien una lista de obstaculos.
+Creo los enemigos con su respectiva posicion en el mapa.
+Creo el heroe con la vida que tenia en el nivel anterior, seteandole su posicion en el mapa.
+Si el nivel tiene obstaculos o barreras, las creo con su posicion fija.
+
+////////////////////////////////////////////////////////////////////////////////
+
+Movimiento del jugador:
+El jugador tiene una posicion, que es seteada a comienzo de cada nivel, y si el usuario preciona las flechas hacia arriba
+o hacia abajo, se aumenta o disminuye su posicion en el eje Y respectivamente.
+Si el usuario presiona la tecla "Espacio", el heroe realiza un ataque.
+
+Movimiento de los enemigos:
+Cada enemigo posee su inteligencia personal. Los enemigos armados van variando su posicion en X e Y aleatoriamente
+por todo el mapa, en un rango predefinido. Los kamikazes mareados varian su posicion en X e Y, pero en X solo disminuye (se mueve hacia la izquierda)
+para acercarse al jugador. Los kamikazes buscadores igualan nuestra posicion en Y, y van disminuyendo la posicion en X.
+El armado especial se comporta como armado hasta transformarse en kamikaze, donde toma su comportamiento. El kamikaze
+especial se comporta como el  kamikaze buscador y al 50% se comporta como el mareado.
+Si un enemigo llega al margen izquierdo de la pantalla, vuelve a aparecer del lado derecho (Se setea la nueva posicion).
