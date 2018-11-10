@@ -1,0 +1,1 @@
+Se deben importar las dos carpetas del proyecto, estas estan vinculadas entre si. No pudimos subirlo al GitHub de manera normal porque nos tira un error al subir un archivo mayor a 25MB. Tuvimos que subirlo en .rar porque decia que poseia mas de 100 files.
